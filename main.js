@@ -3,11 +3,10 @@ var template = $("#people-template").html();
 
 $("#peopleModule").find("button").on("click",function(){
     people.push($("#peopleModule").find("input").val());
-    console.log("added");
     $("peopleModule").find("input").val("");
     //data for mustache template
     var data = {
-        people: people
+        people: people,
     }
     $("#peopleModule").find("ul").html(Mustache.render(template, data));
 });
