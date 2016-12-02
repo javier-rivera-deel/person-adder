@@ -1,0 +1,19 @@
+ul li{
+    background-color: #84ff7f;
+    list-style: none;
+    width: 20%;
+    padding: 0.7%;
+    font-family: monospace;
+    position: relative;
+}
+
+i.del{
+    font-family: monospace;
+    background-color: bisque;
+    padding: 2%;
+    font-style: normal;
+    border-radius: 15px;
+    position: absolute;
+    top: 13%;
+    right: 3%;
+}
