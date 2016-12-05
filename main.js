@@ -1,15 +1,22 @@
 (function(){
 var people = {
-        people : [],
+        people : ["javier","miguel"],
         init: function(){
             this.cacheDom();
+            this.render();
         },
         cacheDom: function(){
             this.$el = $("#peopleModule");
-            this.$button = $el.find("button");
-            this.$input = $el.find("input");
-            this.$ul = $el.find("ul");
+            this.$button = this.$el.find("button");
+            this.$input = this.$el.find("input");
+            this.$ul = this.$el.find("ul");
             this.template = this.$el.find("#people-template").html();
+        },
+        render:function(){
+            var data = {
+                people : this.people
+            };
+            this.$ul.html(Mustache.render(this.template, data))
         },
     };
 
