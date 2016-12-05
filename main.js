@@ -20,20 +20,6 @@ $("#peopleModule").find("ul").delegate("i.del", "click", function(e){
     people.splice(i,1);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*(function(){
        console.log("testing self executing functions");
        var obj = {
